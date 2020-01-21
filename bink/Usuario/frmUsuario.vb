@@ -5,9 +5,13 @@ Imports System.IO
 Imports Npgsql
 Imports System.ComponentModel
 
+
+
+
 Partial Public Class frmUsuario
 
     Private IdUsua As Integer = 0
+    Dim teste As Integer = 0
     Private Sub FrmUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         If Not bgwCarregaUsu.IsBusy Then
