@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rtbContrato.Text" xml:space="preserve">
+    <value>                                                               CONTRATO DE IMPLANTAÇÃO E LICENCIAMENTO DE SOFTWARE
+
+	Figuram como partes neste Contrato Particular de Licenciamento de Software amparado pela lei nº 9.609/98 c/c com a lei nº 9.610/98, a Empresa PFSYSTEM SOLUÇÕES, com endereço comercial à Rua Goiânia nº 89, cidade e comarca de Paraguaçu Paulista / SP, doravante chamado de CONTRATADO sob a denominação de desenvolvimento e licenciamento de programas de computador customizáveis, não customizáveis e prestação de serviço, e a EMPRESA: _______________________ sob o nome fantasia de ______________________com CNPJ nº ________________ e com Inscrição Estadual _______________ com endereço comercial a ________, Bairro: _________, CEP: _______________, e endereço de cobrança a _________________Bairro: ________________, CEP: __________________Cidade e Comarca de: _____________ doravante chamada de CONTRATANTE. Considerando tudo o que as partes discutiram e estabeleceram até a presente data, resolveram firmar o contrato abaixo:
+
+CLÁUSULA PRIMEIRA - DO OBJETO
+
+1.	É objeto do presente contrato a implantação e licenciamento do Software denominado CROMA SERIGRAFIA de propriedade do contratado.
+2.	A implantação compreende a instalação e configuração do programa no Servidor do contratante e o treinamento inicial para a operação do mesmo sendo este presencial ou por videoconferência.
+3.	Será considerado instalado, todo software implantado pelo contratado, que de alguma forma, em parte ou no total, estejam produzindo informações com dados reais do contratante.
+4.	O licenciamento compreende o pagamento referente à concessão de uso do Software a manutenção e suporte do mesmo de acordo com a CLAUSULA TERCEIRA.
+5.	O contratado fornecerá ao contratante, sem nenhum custo adicional, todas as novas versões dos programas citados no parágrafo 1º, durante a vigência do contrato.
+
+CLÁUSULA SEGUNDA - DA VIGÊNCIA DO CONTRATO
+
+1.	O presente contrato vigorará pelo prazo de seis meses (6) com início a partir da data da sua assinatura e, será automaticamente renovado por igual período, desde que, nenhuma das partes se manifeste contrária à prorrogação do mesmo, com antecedência mínima de 30 dias.
+
+
+
+
+
+
+CLÁUSULA TERCEIRA - DO PAGAMENTO DOS SERVIÇOS
+
+1.	O pagamento da mensalidade deverá ser efetuado todo dia 01 (primeiro) de cada mês. 
+Primeiro dia um (1) após a implantação será cobrada a título de licenciamento e manutenção a mensalidade na importância de R$ 110,00 (cento e dez reais).
+2.	Quaisquer outras alterações que forem solicitadas para serem feitas no sistema, que impliquem na alteração da programação do mesmo, terá os seus custos e prazo de execução acertado em comum acordo entre o contratante e o contratado, à parte este contrato.
+3.	Todos os pagamentos serão feitos diretamente ao contratado, ou a quem este indicar, com poderes para total e plena quitação e emissão de comprovante de pagamento.
+4.	Caso o contratante esteja situado fora do município do contratado, serão cobradas as despesas de locomoção quando a solicitação for para a manutenção e ou edificação dos equipamentos e treinamentos, cujo valor será combinado entre as duas partes, além de estadia e refeições, se necessário, que deverão ser pagas no ato da visita.
+5.	O reajuste da mensalidade terá como a data base o mês de janeiro subsequente à assinatura do contrato e será proporcional ao período de vigência deste, utilizando-se o índice IGP-M da FGV, ou no caso de extinção deste índice, o indicador que vier a ser adotado a fim de substituí-lo.
+6.	O pagamento da implantação será a vista ou a prazo, no ato da mesma, dependendo da negociação de ambas as partes.
+
+
+CLÁUSULA QUARTA - DA MANUTENÇÃO
+
+1.	O contratado atenderá a chamados do contratante, para suporte ou sanar falhas no sistema, sempre que solicitado, num prazo máximo de 48 horas, ou em data posterior combinada de comum acordo entre ambas as partes.
+2.	O atendimento no local de trabalho do contratante para fins de manutenção será efetuado 24hs por dia e sete dias por semana.
+3.	Caso o contratante esteja situado a mais de 50 Km da sede do contratado, deverá ser feito agendamento prévio para o atendimento.
+4.	Durante o atendimento para o suporte técnico no local de trabalho do contratante, este deverá estar sempre presente ou indicar alguém responsável para o devido acompanhamento dos serviços. O não cumprimento desta cláusula irá desobrigar o contratado da permanência no local, mesmo assim, serão cobradas as despesas de viagem conforme citado na cláusula TERCEIRA.
+5.	Os serviços técnicos de manutenção serão efetuados desde que não sejam causados por:
+5.1	Falhas em providenciar, continuamente, ambiente adequado à instalação física do equipamento, tais como: refrigeração, corrente elétrica adequada, falta ou interrupção do fornecimento de energia elétrica.
+5.2	Sinistros de qualquer natureza, tais como: acidentes, incêndio, inundação, vento, raio, transporte, água.
+5.3	Negligência ou uso inadequado do equipamento ou software (tais como vírus eletrônico e descompiladores).
+5.4	Alterações mecânicas, elétricas ou eletrônicas dos equipamentos.
+5.5	Uso do software para fins diversos do qual foi projetado.
+5.6	Perda de informações por falta de cópias de segurança (BACKUP).
+5.7	Alterações e/ou necessidades de qualquer ordem, seja por necessidade ou conveniência do contratante.
+5.8	Manutenção em programas de Terceiros que venham estar instalados na máquina do contratante.
+6.	O contratado não poderá ser responsabilizado por softwares “piratas” que estejam instalados na(s) máquina(s) do contratante, pois o contratado apenas instalará na máquina do contratante o(s) software(s) descrito(s) neste contrato.
+7.	É livre o acesso do contratado ao(s) equipamento(s) do contratante, a fim de prestar serviços de instalação, manutenção, suporte técnico, treinamento ou qualquer outro que seja necessário para o cumprimento deste contrato.
+
+CLÁUSULA QUINTA - DA RESCISÃO CONTRATUAL
+
+1.	As partes poderão rescindir o presente contrato nas seguintes condições:
+1.1	Por qualquer uma das partes, sem prévio aviso, desde que, não sejam cumpridas as cláusulas contratuais aqui estabelecidas.
+1.2	Pelo contratante, mediante aviso prévio por escrito justificando o motivo. Deverá acontecer, além disso, até 30 (trinta) dias corridos, antes da data prevista para o evento.
+2.	Caso exista a necessidade de rescisão da parte contratante sem um dos motivos descritos na clausula 1.1, a mesma terá que arcar com pagamento da multa contratual no valor de 1.000(mil) reais mais a metade das parcelas de manutenção que ainda não estiver sido paga, contando da data da rescisão até a data do termino do contrato.
+3.	Após a rescisão contratual o contratado terá direito de remover do(s) computador(es) do contratante todos os programas descritos neste contrato.
+4.	A rescisão contratual não exime o contratante da responsabilidade do pagamento das mensalidades e dos encargos pendentes.
+5.	Caso contratado necessite deixar de fornecer os serviços contratados o contratante será avisado com 30 (Trinta) dias de antecedência ao vencimento do contrato qual será a empresa que continuará fornecendo os serviços.
+
+CLÁUSULA SEXTA - DISPOSIÇÕES FINAIS
+
+1.	Declaram as partes que este contrato corresponde à manifestação final, completa e exclusiva, do acordo celebrado entre ambas as partes, substituindo as propostas ou contratos anteriores, verbais ou escritos, bem como as demais comunicações entre as mesmas, com relação ao objeto deste contrato.
+
+E por estarem assim justo e contratados, as partes assinam o presente contrato em 2 (duas) vias de igual teor, para os devidos efeitos legais.
+
+
+Paraguaçu Paulista, ___ de ______ de ___
+
+
+
+Contratado
+
+
+		Contratante
+
+
+Testemunha		Testemunha</value>
+  </data>
+</root>

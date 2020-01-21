@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F0446C8E-D5BF-4B21-9311-AD3043D6CF0B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>bink.My.MyApplication</StartupObject>
+    <RootNamespace>bink</RootNamespace>
+    <AssemblyName>bink</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>bink.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>bink.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="AES">
+      <HintPath>Dll\AES.dll</HintPath>
+    </Reference>
+    <Reference Include="CompsPersonal">
+      <HintPath>Dll\CompsPersonal.dll</HintPath>
+    </Reference>
+    <Reference Include="ConsultaCEP">
+      <HintPath>Dll\ConsultaCEP.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v18.2.Core, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Ionic.Zip">
+      <HintPath>Dll\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Itenso.Rtf.Converter.Html">
+      <HintPath>Dll\Itenso.Rtf.Converter.Html.dll</HintPath>
+    </Reference>
+    <Reference Include="Itenso.Rtf.Interpreter">
+      <HintPath>Dll\Itenso.Rtf.Interpreter.dll</HintPath>
+    </Reference>
+    <Reference Include="Itenso.Rtf.Parser">
+      <HintPath>Dll\Itenso.Rtf.Parser.dll</HintPath>
+    </Reference>
+    <Reference Include="Itenso.Sys">
+      <HintPath>Dll\Itenso.Sys.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Dll\Microsoft.mshtml.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>Dll\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>Dll\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="RichTextBoxCtrl">
+      <HintPath>Dll\RichTextBoxCtrl.dll</HintPath>
+    </Reference>
+    <Reference Include="StreamHelper">
+      <HintPath>Dll\StreamHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cadastro\Banco\frmBanco.Designer.vb">
+      <DependentUpon>frmBanco.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Banco\frmBanco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\Cliente\frmCadCliente.Designer.vb">
+      <DependentUpon>frmCadCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Cliente\frmCadCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\Fornecedor\frmFornecedor.Designer.vb">
+      <DependentUpon>frmFornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Fornecedor\frmFornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\Funcionário\frmFuncionário.Designer.vb">
+      <DependentUpon>frmFuncionário.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Funcionário\frmFuncionário.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\Funcionário\frmTirarFoto.Designer.vb">
+      <DependentUpon>frmTirarFoto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\Funcionário\frmTirarFoto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\csFuncoes.vb" />
+    <Compile Include="Particular\frmContaRicardo.Designer.vb">
+      <DependentUpon>frmContaRicardo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Particular\frmContaRicardo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\frmAlterarSenhas.Designer.vb">
+      <DependentUpon>frmAlterarSenhas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\frmAlterarSenhas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\frmPerfil.Designer.vb">
+      <DependentUpon>frmPerfil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\frmPerfil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\frmUsuario.Designer.vb">
+      <DependentUpon>frmUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\frmUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controle de usuário\ucPerfilCadastro.Designer.vb">
+      <DependentUpon>ucPerfilCadastro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controle de usuário\ucPerfilCadastro.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controle de usuário\ucPerfilUtilitario.Designer.vb">
+      <DependentUpon>ucPerfilUtilitario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controle de usuário\ucPerfilUtilitario.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\frmMenu.Designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\frmServidor.Designer.vb">
+      <DependentUpon>frmServidor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\frmServidor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\frmSplash.Designer.vb">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\frmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\aes.vb" />
+    <Compile Include="Modulos\aes_ecb.vb" />
+    <Compile Include="Modulos\CamposObrig.vb" />
+    <Compile Include="Modulos\ClassCriptografia.vb" />
+    <Compile Include="Modulos\csEmpresa.vb" />
+    <Compile Include="Modulos\JanelaExterna.vb" />
+    <Compile Include="Modulos\JavaScriptSerializer.vb" />
+    <Compile Include="Modulos\mdoAutoCompletar.vb" />
+    <Compile Include="Modulos\mdoCarregaImagens.vb" />
+    <Compile Include="Modulos\mdoConexao.vb" />
+    <Compile Include="Modulos\mdoCorComponente.vb" />
+    <Compile Include="Modulos\mdoEmail.vb" />
+    <Compile Include="Modulos\mdoEmailEmpresa.vb" />
+    <Compile Include="Modulos\mdoEmpresa.vb" />
+    <Compile Include="Modulos\mdoFormatos.vb" />
+    <Compile Include="Modulos\mdoFormatText.vb" />
+    <Compile Include="Modulos\mdoLog.vb" />
+    <Compile Include="Modulos\mdomsgbox.vb" />
+    <Compile Include="Modulos\mdoSoLetrasNumeros.vb" />
+    <Compile Include="Modulos\mdoValida_CNPJ.vb" />
+    <Compile Include="Modulos\mdoValida_CPF_CNPJ.vb" />
+    <Compile Include="Modulos\mdoValorExtenso.vb" />
+    <Compile Include="Modulos\mdoVariavel.vb" />
+    <Compile Include="Modulos\mdoVerificaTempo.vb" />
+    <Compile Include="Modulos\NumeroPorExtenso.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Empresa\frmCadEmpresa.Designer.vb">
+      <DependentUpon>frmCadEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Empresa\frmCadEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilitarios\frmCarregamento.Designer.vb">
+      <DependentUpon>frmCarregamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utilitarios\frmCarregamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilitarios\Utilidades\frmCadImagem.Designer.vb">
+      <DependentUpon>frmCadImagem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utilitarios\Utilidades\frmCadImagem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilitarios\Utilidades\frmContrato.Designer.vb">
+      <DependentUpon>frmContrato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utilitarios\Utilidades\frmContrato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\frmLog.Designer.vb">
+      <DependentUpon>frmLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\frmLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\frmPermissao.Designer.vb">
+      <DependentUpon>frmPermissao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\frmPermissao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilitarios\Utilidades\frmSobre.Designer.vb">
+      <DependentUpon>frmSobre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utilitarios\Utilidades\frmSobre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\frmTipoUsuario.Designer.vb">
+      <DependentUpon>frmTipoUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\frmTipoUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cadastro\Banco\frmBanco.resx">
+      <DependentUpon>frmBanco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\Cliente\frmCadCliente.resx">
+      <DependentUpon>frmCadCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\Fornecedor\frmFornecedor.resx">
+      <DependentUpon>frmFornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\Funcionário\frmFuncionário.resx">
+      <DependentUpon>frmFuncionário.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\Funcionário\frmTirarFoto.resx">
+      <DependentUpon>frmTirarFoto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Particular\frmContaRicardo.resx">
+      <DependentUpon>frmContaRicardo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\frmAlterarSenhas.resx">
+      <DependentUpon>frmAlterarSenhas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\frmPerfil.resx">
+      <DependentUpon>frmPerfil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\frmUsuario.resx">
+      <DependentUpon>frmUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controle de usuário\ucPerfilCadastro.resx">
+      <DependentUpon>ucPerfilCadastro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controle de usuário\ucPerfilUtilitario.resx">
+      <DependentUpon>ucPerfilUtilitario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\frmServidor.resx">
+      <DependentUpon>frmServidor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\frmSplash.resx">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empresa\frmCadEmpresa.resx">
+      <DependentUpon>frmCadEmpresa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilitarios\frmCarregamento.resx">
+      <DependentUpon>frmCarregamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilitarios\Utilidades\frmCadImagem.resx">
+      <DependentUpon>frmCadImagem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilitarios\Utilidades\frmContrato.resx">
+      <DependentUpon>frmContrato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\frmLog.resx">
+      <DependentUpon>frmLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\frmPermissao.resx">
+      <DependentUpon>frmPermissao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilitarios\Utilidades\frmSobre.resx">
+      <DependentUpon>frmSobre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\frmTipoUsuario.resx">
+      <DependentUpon>frmTipoUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\financeiro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cartoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Line Chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bar Chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie Chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001_shoppingcart_empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acroread.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control-center2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnome-searchtool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnome-terminal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print-manager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redhat-system_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gedit-icon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnome-gnumeric3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnome-calc3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Info.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money_Transportation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money_Bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money_Calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money_Pig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money_Pig1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money_Safe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money_Safe1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfs_unmount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fornecedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\funcionarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol-Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\porca4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contapagar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contareceber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alterar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\incluir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dll\AES.dll" />
+    <Content Include="Dll\CompsPersonal.dll" />
+    <Content Include="Dll\ConsultaCEP.dll" />
+    <Content Include="Dll\Extens32.dll" />
+    <Content Include="Dll\Ionic.Zip.dll" />
+    <Content Include="Dll\Itenso.Rtf.Converter.Html.dll" />
+    <Content Include="Dll\Itenso.Rtf.Interpreter.dll" />
+    <Content Include="Dll\Itenso.Rtf.Parser.dll" />
+    <Content Include="Dll\Itenso.Sys.dll" />
+    <Content Include="Dll\Microsoft.mshtml.dll" />
+    <Content Include="Dll\Newtonsoft.Json.dll" />
+    <Content Include="Dll\RichTextBoxCtrl.dll" />
+    <Content Include="Dll\StreamHelper.dll" />
+    <Content Include="Dll\System.Speech.dll" />
+    <None Include="Resources\perfil.png" />
+    <None Include="Resources\pfsystem.jpg" />
+    <None Include="Resources\iniciar.png" />
+    <None Include="Resources\camera.png" />
+    <None Include="Resources\SemRosto2.bmp" />
+    <None Include="Resources\cad_imagem.png" />
+    <None Include="Resources\troca_senha.png" />
+    <None Include="Resources\lixeira.png" />
+    <None Include="Resources\perfil_utilitario.png" />
+    <None Include="Resources\perfil_financeiro.png" />
+    <None Include="Resources\perfil_cadastro.png" />
+    <None Include="Resources\pfsystem_small.png" />
+    <None Include="Resources\permissao.png" />
+    <None Include="Resources\lupa1.png" />
+    <None Include="Resources\servico.png" />
+    <None Include="Resources\produto.png" />
+    <None Include="Resources\INK.png" />
+    <None Include="Resources\comexao.png" />
+    <None Include="Resources\login.png" />
+    <None Include="Resources\database_accept.png" />
+    <None Include="Resources\database_remove.png" />
+    <None Include="Resources\spinner1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PostgresSQL\programa\" />
+    <Folder Include="PostgresSQL\script\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
